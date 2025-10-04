@@ -1,0 +1,511 @@
+
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b7adad;
+}
+
+/* Admin Page Layout */
+.adminpage {
+    display: flex;
+ 
+}
+
+/* Sidebar Styling */
+.sidenav {
+    width: 250px;
+    background-color: #000000;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidenav a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.sidenav a:hover {
+    background-color: #34495e;
+}
+
+.sidenav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.sidenav a.active {
+    background-color: #2980b9;
+}
+
+.sidenav .btn_logout {
+    background-color: #a10d0d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.sidenav .btn_logout:hover {
+    background-color: #ff0000;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    height: 80PX;
+    flex-grow: 1;
+    background-color: #ecf0f1;
+}
+
+.main-content h1 {
+    font-size: 30px;
+
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .adminpage {
+        flex-direction: column;
+    }
+
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* **********************************************************************SIDE NAV**************** */
+
+  
+  
+.container1 {
+    
+  
+    max-width: 850px;
+    margin-top:10px;
+    margin-bottom: 80px;
+    margin-left: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 80px 60px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+
+  
+  .container1 .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-content .login-form,
+  .form-content .signup-form {
+    width: calc(100% / 2 - 25px);
+  }
+  
+  .forms .form-content .title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .forms .form-content .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #070707;
+  }
+  
+  .forms .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  .form-content .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+  }
+  
+  .forms .form-content .button input {
+    color: #fff;
+    background: #000000;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  
+  .forms .form-content .button input:hover {
+    background: #940000;
+  }
+  
+
+  @media (max-width: 730px) {
+    .container .cover {
+      display: none;
+    }
+  
+    .form-content .login-form,
+    .form-content .signup-form {
+      width: 100%;
+    }
+  
+    .form-content .signup-form {
+      display: none;
+    }
+  
+    .container #flip:checked ~ .forms .signup-form {
+      display: block;
+    }
+  
+    .container #flip:checked ~ .forms .login-form {
+      display: none;
+    }
+  }
+
+
+/* **********************************************************************USER ADD**************** */
+
+/* **********************************************************************table**************** */
+
+
+/* General Table Styles */
+table {
+  width: 60%;
+  margin-left: 20%;
+  background-color: #c2c9c2; /* Light gray background for the table */
+  border-collapse: collapse; /* To remove double borders */
+  margin-top: 30px;
+  font-family: Arial, sans-serif; /* Font family for the table text */
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 14px; /* Standard font size */
+}
+
+th {
+  background-color: #753737; /* Dark red background for the header */
+  color: white; /* White text for better contrast */
+  font-size: 16px; /* Larger font size for header */
+}
+
+/* Row Hover Effects */
+tr:hover {
+  background-color: #f1f1f1; /* Light hover effect for rows */
+  cursor: pointer;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Adding focus on rows */
+tr:focus {
+  outline: 2px solid #753737; /* Dark red outline on row focus */
+}
+
+/* *************** Responsive Styles *************** */
+@media (max-width: 768px) {
+  table {
+      width: 100%; /* Full width for small screens */
+      margin-left: 0; /* Remove margin from left */
+  }
+
+  th, td {
+      font-size: 12px; /* Smaller font size for mobile */
+      padding: 8px 10px; /* Slightly reduced padding */
+  }
+}
+
+/* **********************************************************************table**************** */
+
+ /* 8***********************************************product add****************** */
+    
+ .container{
+        
+  margin-left: 400px;
+  margin-top: 20px;
+width: 800px;
+height: 570px;
+overflow: hidden;
+background: #fff;
+border-radius: 10px;
+transition: height 0.2s ease;
+box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.container .wrapper{
+width: 1000px;
+display: flex;
+}
+
+.post header{
+font-size: 22px;
+font-weight: 600;
+padding: 17px 0;
+text-align: center;
+border-bottom: 1px solid #bfbfbf;
+}
+.post form{
+margin: 20px 25px;
+}
+
+
+form :where(textarea, button){
+width: 100%;
+outline: none;
+border: none;
+}
+form textarea{
+resize: none;
+font-size: 18px;
+margin-top: 30px;
+min-height: 100px;
+}
+
+
+
+.theme-emoji img:last-child{
+max-width: 24px;
+}
+
+
+.content input{
+width: 420px;
+height: 57px;
+margin: 15px 0;
+padding: 0 15px;
+border-radius: 7px;
+border: 1px solid #B9B9B9;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+form .options{
+  display: flex;
+  align-items: center;
+height: 57px;
+margin: 15px 0;
+padding: 0 15px;
+border-radius: 7px;
+border: 1px solid #B9B9B9;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+form button{
+height: 53px;
+color: #fff;
+margin-top: 23px;
+font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+color: #BCC0C4;
+cursor: no-drop;
+border-radius: 7px;
+background: #e2e5e9;
+transition: all 0.3s ease;
+}
+form textarea:valid ~ button{
+color: #fff;
+cursor: pointer;
+background: #4599FF;
+}
+
+form textarea:valid ~ button:hover{
+background: #1a81ff;
+}
+/* 8***********************************************product add****************** */
+
+
+
+
+ /* **************************product view***************************** */
+
+        
+ .allcard{
+  margin-left: 200px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+      .card1 {
+          background-color: #fff;
+          display: inline-block;
+          color: #0a0909;
+          border-radius: 10px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          margin-left: 90px;
+          margin-top: 10px;
+          width: 300px;
+      }
+
+      .card1 img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+      }
+
+      .card1 h3 {
+          margin-top: 10px;
+          font-size: 1.2em;
+          margin: 10px;
+          text-align: center;
+      }
+
+      .card1 p {
+          margin-bottom: 10px;
+          text-align: center;
+      }
+
+   
+/* **************************produc viewt***************************** */
+
+
+
+
+  
+    /* ************************************blog view********************** */
+
+
+    .container2 .header h2{
+      margin-top: 7px;
+      margin-bottom: 20px;
+      margin-left: 450px;
+      font-size: 40px;
+      font-weight:bold;
+      color: #940000;
+      font-family: "Raleway", sans-serif;
+     
+   }
+ 
+   .container2{
+      margin-left: 250px;
+     padding:  40px;
+ 
+   }
+   .card{
+    height: 100%;
+     display: inline-block;
+     width: 500px;
+     margin: 25px 25px;
+     background: rgb(143, 134, 134);
+     transition: 0.4s;
+     box-shadow: 2px 2px 5px rgba(250, 247, 247, 0.2);
+     
+   }
+   .card:hover{
+     height: 500%;
+     box-shadow: 10px 10px 20px rgba(136, 133, 133, 0.2);
+   }
+   .card .img{
+     height: 250px;
+     width: 100%;
+   }
+   .card .img img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+   }
+   .card .top-text{
+     padding: 5px;
+   }
+   .card .top-text .name{
+     font-family: "Raleway", sans-serif;
+     font-size: 25px;
+     font-weight: 600;
+     color: #202020;
+   }
+ 
+   .card .bottom-text{
+     position: absolute;
+     width: 600px;
+     height: 100%ppx;
+     padding: 0 20px 10px 20px;
+     margin-top: 5px;
+     background: white;
+     opacity: 0;
+     visibility: hidden;
+     transition: 0.1s;
+   }
+ .card .bottom-text .text{
+   font-family: "Raleway", sans-serif;
+   font-size: 20px;
+ 
+ }
+ 
+   .card:hover .bottom-text{
+     opacity: 1;
+     visibility: visible;
+     width: 460px;
+   }
+   .card .bottom-text .text{
+     text-align: justify;
+   }
+   
+   @media screen and (max-width: 978px) {
+     .container{
+       flex-wrap: wrap;
+       flex-direction: column;
+     }
+     .card{
+       max-width: 700px;
+       margin: 20px 0;
+     }
+   }
+ 
+ 
+ 
+/* ************************************blog view********************** */
