@@ -1,0 +1,295 @@
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+ 
+}
+
+
+
+
+/*  **************************************navigationa bar*******************  */
+
+
+.logo a{
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-size: 40px;
+font-weight: 800;
+
+}
+
+header {
+background-color: #ffffff;
+opacity: 0.9;
+margin: 5px 0 0px 0 ;
+position: sticky !important;
+top: 0 !important;
+z-index: 1000;
+
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 40px;
+
+}
+
+
+
+.nav-links {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.nav-links li {
+margin: 0 15px;
+}
+
+.nav-links a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+font-size: 25px;
+font-weight: 600;
+}
+
+.nav-links a:hover {
+text-decoration: underline;
+}
+
+.nav-links button{
+
+font-size: 18px;
+background-color: rgb(255, 255, 255);
+color: white;
+border: 1px solid transparent;
+border-radius: 25px;
+outline: none;
+cursor: pointer;
+box-shadow: 0px 0px 10px rgb(0, 0, 0);
+transition: 0.4s;
+margin-left: 10px;
+
+}
+
+.nav-links button:hover{
+
+background-color:rgba(248, 9, 9, 0.685);
+
+color: rgb(0, 0, 0);
+box-shadow: 0px 0px 15px rgb(10, 10, 10);
+border: 1px solid rgb(0, 0, 0);
+}
+
+/*  **************************************navigationa bar*******************  */
+
+
+
+
+
+
+
+
+  /* ********************************************blog css******************** */
+ 
+
+  body{
+    background-color: #46494c;
+  }
+
+  .container1 .header h2{
+     margin-top: 7px;
+     margin-bottom: 20px;
+     text-align: center;
+     font-size: 40px;
+     font-weight:bold;
+     color: #ffffff;
+     font-family: "Raleway", sans-serif;
+    
+  }
+
+  .container1{
+    padding:  40px ;
+    align-items: center;
+    text-align: center;
+
+  }
+  .card{
+    height: 100%;
+    display: inline-block;
+    width: 500px;
+    margin: 25px 70px;
+    background: rgb(198, 195, 195);
+    transition: 0.4s;
+    box-shadow: 2px 2px 5px rgba(250, 247, 247, 0.2);
+    
+  }
+  .card:hover{
+    height: 500%;
+    box-shadow: 10px 10px 20px rgba(136, 133, 133, 0.2);
+  }
+  .card .img{
+    height: 250px;
+    width: 100%;
+  }
+  .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card .top-text{
+    padding: 5px;
+  }
+  .card .top-text .name{
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+  }
+
+  .card .bottom-text{
+    position: absolute;
+    width: 600px;
+    height: 100%ppx;
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+  }
+.card .bottom-text .text{
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+
+}
+
+  .card:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;  
+    width: 500px;
+
+  }
+  .card .bottom-text .text{
+    text-align: justify;
+   
+  }
+  
+  @media screen and (max-width: 978px) {
+    .container{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .card{
+      max-width: 700px;
+      margin: 20px 0;
+    }
+  }
+
+
+
+  /* ********************************************blog css******************** */
+
+
+  
+
+
+/* ************************************************footer page style************ */
+.footer {
+background-color:#1C1C1C;
+color: white;
+padding: 20px 0;
+text-align: center;
+}
+
+.footercontent {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+.footersection {
+flex: 1;
+min-width: 200px;
+margin: 10px;
+}
+
+.footersection h2 {
+margin-bottom: 10px;
+color:#999999;
+font-size: 30px;
+letter-spacing: 2px;
+
+
+}
+
+
+.footersection p {
+font-size: 20px;
+line-height: 1.5;
+font-family: "Raleway", sans-serif;
+}
+
+.footersection ul {
+list-style: none;
+padding: 0;
+
+}
+
+
+.footersection li{
+margin: 15px 0;
+font-size: 15px;
+font-family: "Raleway", sans-serif;
+}
+
+
+
+
+.footersection a {
+color: white;
+text-decoration: none;
+font-family: "Raleway", sans-serif;
+}
+
+.footersection a:hover {
+text-decoration: underline;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.socialMediaicon{
+margin: 5px 5px;
+}
+
+
+.footerbottom {
+background-color: #686666;
+padding: 10px 0;
+}
+
+.footerbottom p {
+margin: 0;
+font-size: 14px;
+} 
+
+
+/* ************************************************end footer page style************ */
+
+
+

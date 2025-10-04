@@ -1,0 +1,238 @@
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+/*  **************************************navigationa bar*******************  */
+
+
+
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 800;
+}
+header {
+    background-color: whitesmoke;
+    opacity: 0.9;
+    margin: 5px 0 0px 0 ;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+
+    
+}
+
+
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cart-icon{
+    
+   width:80px;
+    border-radius: 15px;
+    font-size: 23px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+ 
+}
+
+
+.nav-links .lgnbtn{
+  
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.4s;
+    margin-left: 10px;
+  
+  }
+  
+  .nav-links .lgnbtn:hover{
+  
+  background-color:rgba(248, 9, 9, 0.685);
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px rgb(10, 10, 10);
+  border: 1px solid rgb(0, 0, 0);
+  }
+
+/*  **************************************navigationa bar*******************  */
+
+/* **************************product***************************** */
+
+        
+body{
+    background-color: #46494c;
+  }
+  
+
+  
+  .allcard{
+    margin-left: 70px;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+  
+}
+
+
+
+        .card {
+            background-color: #fff;
+            display: inline-block;
+            margin: 25px 25px;
+            color: #0a0909;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            height: auto;
+            width: 300px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            margin: 10px;
+            font-family: "Raleway", sans-serif;
+            text-align: center;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: "Raleway", sans-serif;
+        }
+
+
+/* **************************product***************************** */
+
+
+.footer {
+    background-color:#1C1C1C;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footersection {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footersection h2 {
+    margin-bottom: 10px;
+    color:#999999;
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+
+}
+
+
+.footersection p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif;
+}
+
+.footersection ul {
+    list-style: none;
+    padding: 0;
+  
+}
+
+
+.footersection li{
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+.footersection a {
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+.footersection a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.socialMediaicon{
+    margin: 5px 5px;
+}
+
+
+.footerbottom {
+    background-color: #686666;
+    padding: 10px 0;
+}
+
+.footerbottom p {
+    margin: 0;
+    font-size: 14px;
+} 
+
+
+/* ************************************************end footer page style************ */

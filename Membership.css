@@ -1,0 +1,362 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+  }
+  body{
+    background-color: #46494c;
+  }
+  
+  
+  
+  /*  **************************************navigationa bar*******************  */
+
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  header {
+    background-color: #ffffff;
+    opacity: 0.9;
+    margin: 5px 0 0px 0 ;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+  
+    
+  }
+  
+  
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-links button{
+  
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.4s;
+    margin-left: 10px;
+  
+  }
+  
+  .nav-links button:hover{
+  
+  background-color:rgba(248, 9, 9, 0.685);
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 15px rgb(10, 10, 10);
+  border: 1px solid rgb(0, 0, 0);
+  }
+  
+  /*  **************************************navigationa bar*******************  */
+  
+    /* ******************************************member*************** */
+  
+  .cards{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+  }
+
+ 
+
+  .cards .header{
+    color: #000000;
+    font-size: 40px;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .content h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+  
+  }
+  
+  
+  .services{
+    display: flex;
+    align-items: center;
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px #1E1E1E;
+    transition: all .3s ease;
+  }
+
+  .content-1{
+    background-color:#CBC8CC;
+   
+  }
+
+  .content-2{
+    background-color: #c5b358;
+  }
+
+  .content-3{
+    background-color: #c0c0c0;
+  }
+  
+  .content img{
+    width: 200px;
+    background: #000000;
+    border-radius: 100px;
+  }
+  .content .fab{
+    font-size: 70px;
+    margin: 16px 0;
+  }
+  .content > *{
+    flex: 1 1 100%;
+  }
+  .content:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  .content p:hover{
+    color: rgb(207, 6, 6);
+   
+  }
+  
+  .content-1:hover{
+    border-color:#E5E4E2;
+    background: #E5E4E2;
+  }
+  
+  .content-2:hover{
+    border-color:#cfb53b;
+    background: #cfb53b;
+  }
+  
+  .content-3:hover{
+    border-color: #757575;
+    background: #757575;
+  }
+  
+  .content h2{
+    font-size: 30px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .content p{
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+  }
+  .content a{
+    margin: 22px 0;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 15px 0;
+    border-radius: 25px;
+    transition: .3s ease;
+  }
+  .content a:hover{
+    border-radius: 4px;
+  }
+  @media (max-width: 900px) {
+    .services{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  
+  /* ******************************************member*************** */
+  
+  
+  /* <!-- **********************************************membership form************** --> */
+  
+
+
+  
+
+  .container {   
+
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+ 
+  
+  .form-group {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    background-color: #c00021;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-left: 20px;
+  }
+  .submit-button:hover{
+  
+  background-color:rgba(0, 0, 0, 0.685);
+  color: rgb(252, 252, 252);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  }
+  
+  /* <!-- **********************************************membership form************** --> */
+
+
+
+  .footer {
+    background-color:#1C1C1C;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footersection {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footersection h2 {
+    margin-bottom: 10px;
+    color:#999999;
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+
+}
+
+
+.footersection p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif;
+}
+
+.footersection ul {
+    list-style: none;
+    padding: 0;
+  
+}
+
+
+.footersection li{
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+.footersection a {
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+.footersection a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.socialMediaicon{
+    margin: 5px 5px;
+}
+
+
+.footerbottom {
+    background-color: #686666;
+    padding: 10px 0;
+}
+
+.footerbottom p {
+    margin: 0;
+    font-size: 14px;
+} 
+
+
+/* ************************************************end footer page style************ */
